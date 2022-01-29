@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assets",
+  "info": {
+    "singularName": "asset",
+    "pluralName": "assets",
+    "displayName": "Asset"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "serial_number": {
+      "type": "string",
+      "required": true
+    },
+    "model_number": {
+      "type": "string",
+      "required": true
+    },
+    "validity_period": {
+      "type": "date"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "perisable",
+        "nonperisable"
+      ],
+      "default": "nonperisable"
+    },
+    "is_available": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value_in_currency": {
+      "type": "biginteger"
+    }
+  }
+}
